@@ -1,20 +1,34 @@
 // Variables
-const progressCircle = document.querySelector(".autoplay-progress svg circle");
-const progressContent = document.querySelector(".autoplay-progress span");
+const hiddenSections = document.querySelector(".hidden-sections");
+const catagoryBox = document.querySelector(".catagory-box");
 const darkmood = document.querySelector(".darkmood");
 const body = document.querySelector("body");
-const catagoryBox = document.querySelector(".catagory-box");
-const hiddenSections = document.querySelector(".hidden-sections");
 const hiddenSearch = document.querySelector(".hidden-search");
-const mainContainer = document.querySelector(".main-container")
-const searchInput = document.querySelector(".input-container input");
 const listItems = document.querySelectorAll(".hidden-search ul li");
+const searchInput = document.querySelector(".input-container input");
 const noResult = document.querySelector(".no-result");
 const footerRightButton = document.querySelector(".footer-right button");
 const footerRightInput = document.querySelector(".footer-right input");
 const hiddenText = document.querySelector("#hidden-text");
 let flag = true;
 // Variables
+
+// Email Js
+function emailfunc() {
+ const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
+ const emailVal = footerRightInput.value.trim();
+ if (fullEmailRegex.test(emailVal)) {
+  hiddenText.innerHTML = "Abune olundu ✅"
+  hiddenText.style.color = "green";
+ } else {
+  hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
+  hiddenText.style.color = "red";
+ }
+}
+footerRightButton.addEventListener("click", emailfunc);
+
+document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
+// Email Js
 
 // search Js
 function searchfunc() {
@@ -42,33 +56,6 @@ function searchfunc() {
 searchInput.addEventListener("input", searchfunc)
 // search Js
 
-// Swiper Js
-let swiper = new Swiper(".mySwiper", {
- spaceBetween: 30,
- centeredSlides: true,
- autoplay: {
-  delay: 2500,
-  disableOnInteraction: false
- },
- pagination: {
-  el: ".swiper-pagination",
-  clickable: true
- },
- navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev"
- },
- on: {
-  autoplayTimeLeft(s, time, progress) {
-   const offset = 125.6 * (1 - progress);
-   progressCircle.style.strokeDashoffset = offset;
-   progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-  }
- }
-});
-// Swiper Js
-
-
 // Dark Mood Js
 if (localStorage.getItem("darkMode") === "enabled") {
  body.classList.add("darkmode-body");
@@ -88,7 +75,6 @@ function darkmode(e) {
 darkmood.addEventListener("click", darkmode);
 // Dark Mood Js
 
-
 // Catagorya Js
 function catagoryFunc() {
  if (flag) {
@@ -102,19 +88,20 @@ function catagoryFunc() {
 catagoryBox.addEventListener("click", catagoryFunc)
 // Catagorya Js
 
-// Email Js
-function emailfunc() {
- const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
- const emailVal = footerRightInput.value.trim();
- if (fullEmailRegex.test(emailVal)) {
-  hiddenText.innerHTML = "Abune olundu ✅"
-  hiddenText.style.color = "green";
- } else {
-  hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
-  hiddenText.style.color = "red";
- }
-}
-footerRightButton.addEventListener("click", emailfunc);
+// =========================================== Register JS ================================
+document.addEventListener("DOMContentLoaded", () => {
+ const signUpButton = document.getElementById("signUp");
+ const signInButton = document.getElementById("signIn");
+ const container = document.getElementById("container");
 
-document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
-// Email Js
+ signUpButton.addEventListener("click", (e) => {
+  e.preventDefault()
+  container.classList.add("right-panel-active");
+ });
+
+ signInButton.addEventListener("click", (e) => {
+  e.preventDefault()
+  container.classList.remove("right-panel-active");
+ });
+});
+// =========================================== Register JS ============================

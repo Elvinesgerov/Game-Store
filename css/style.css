@@ -248,16 +248,19 @@ main {
 
 .catagory-container ul a {
  color: orange;
+ transition: 1.1s;
 }
 
 .catagory-container ul li {
  transition: 1.1s;
 }
 
+.catagory-container ul li a:hover {
+ color: #051430;
+}
+
 .catagory-container ul li:hover {
  transform: scale(1.1);
- color: #051430;
-
 }
 
 .swiper-box {
@@ -365,6 +368,7 @@ main {
  gap: 15px;
  padding-left: 20px;
  border: 2px solid orange;
+ font-weight: 700;
 }
 
 .games-box p {
@@ -480,11 +484,16 @@ main {
 
 .footer-sections ul a {
  color: black;
+ transition: 1.1s;
 }
 
 .footer-sections ul li:hover {
- color: orange;
  transform: scale(1.1);
+ color: orange;
+}
+
+.footer-sections ul li a:hover {
+ color: orange;
 }
 
 .fotter-input {
