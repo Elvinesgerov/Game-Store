@@ -61,3 +61,8 @@
 .darkmode-body .problems {
  background-color: #1B1E21;
 }
+
+span{
+ color: orange;
+ font-weight: 700;
+}

@@ -10,8 +10,55 @@ const footerRightButton = document.querySelector(".footer-right button");
 const footerRightInput = document.querySelector(".footer-right input");
 const hiddenText = document.querySelector("#hidden-text");
 const searchInput = document.querySelector(".input-container input");
+const hiddenPubgBox = document.querySelectorAll(".hidden-pubg-box");
+const pubgContainers = document.querySelectorAll(".pubg-container");
+const pubgContainersInput = document.querySelectorAll('.pubg-container input[type="number"]')
 let flag = true;
 // Variables
+
+// to buy
+pubgContainersInput.forEach(input => {
+ input.addEventListener("input", () => {
+  if (parseInt(input.value) > 10) {
+   input.value = 10;
+  }
+ });
+});
+
+pubgContainers.forEach(container => {
+ const button = container.querySelector("button");
+ const hiddenBox = container.nextElementSibling;
+
+ button.addEventListener("click", () => {
+  document.querySelectorAll(".hidden-pubg-box").forEach(box => {
+   box.style.display = "none";
+  });
+
+  const selectedCurrency = container.querySelector("select").value;
+
+  let price;
+  if (selectedCurrency === "Rubl") {
+   price = parseFloat(container.querySelector("p:nth-of-type(2)").textContent);
+  } else if (selectedCurrency === "Usd") {
+   price = parseFloat(container.querySelector("p:nth-of-type(3)").textContent);
+  } else if (selectedCurrency === "Azn") {
+   price = parseFloat(container.querySelector("p:nth-of-type(4)").textContent);
+  }
+
+  const quantity = parseInt(container.querySelector("input").value);
+  const total = (price * quantity).toFixed(2);
+
+  hiddenBox.querySelector(".valyuta").textContent = selectedCurrency;
+  hiddenBox.querySelector(".price").textContent = price;
+  hiddenBox.querySelector(".say").textContent = quantity;
+  hiddenBox.querySelector(".amount").textContent = total;
+
+  if (quantity >= 1) {
+    hiddenBox.style.display = "table";
+  }
+ })
+});
+// to buy
 
 // Catagorya Js
 function catagoryFunc() {
@@ -87,26 +134,3 @@ footerRightButton.addEventListener("click", emailfunc);
 
 document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
 // Email Js
-
-// questions Js
-function toggleAnswers() {
- const questions = document.querySelectorAll(".problems");
-
- questions.forEach(question => {
-  question.addEventListener("click", () => {
-   closeAllAnswers();
-
-   const answerDiv = question.nextElementSibling;
-   if (answerDiv && answerDiv.classList.contains("answer")) {
-     answerDiv.style.display = "block";
-   }
-  });
- });
-}
-
-function closeAllAnswers() {
- const allAnswers = document.querySelectorAll(".answer");
- allAnswers.forEach(ans => ans.style.display = "none");
-}
-toggleAnswers();
-// questions Js

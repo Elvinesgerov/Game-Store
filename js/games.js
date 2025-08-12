@@ -87,26 +87,3 @@ footerRightButton.addEventListener("click", emailfunc);
 
 document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
 // Email Js
-
-// questions Js
-function toggleAnswers() {
- const questions = document.querySelectorAll(".problems");
-
- questions.forEach(question => {
-  question.addEventListener("click", () => {
-   closeAllAnswers();
-
-   const answerDiv = question.nextElementSibling;
-   if (answerDiv && answerDiv.classList.contains("answer")) {
-     answerDiv.style.display = "block";
-   }
-  });
- });
-}
-
-function closeAllAnswers() {
- const allAnswers = document.querySelectorAll(".answer");
- allAnswers.forEach(ans => ans.style.display = "none");
-}
-toggleAnswers();
-// questions Js

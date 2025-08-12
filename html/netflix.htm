@@ -4,9 +4,9 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Acount</title>
+ <title>Netflix</title>
  <link rel="stylesheet" href="../css/style.css">
- <link rel="stylesheet" href="../css/acount.css">
+ <link rel="stylesheet" href="../css/pubg.css">
  <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png" />
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
 </head>
@@ -114,115 +114,229 @@
    </ul>
   </div>
 
-  <div class="games-box acount-games-box">
-   <i class="ri-bank-line"></i>
-   <p>Balansını artır</p>
+  <div class="games-box pubg-box">
+   <i class="ri-discord-line"></i>
+   <p>Netflix</p>
   </div>
 
-  <div class="acount-container">
-   <h2>Bank Hesabı</h2>
-   <div class="acount-box">
-    <div class="acount-image">
-     <img src="../image/birbankfoto.png" alt="">
-    </div>
-    <div class="card-box">
-     <div class="card-box-center">
-      <h3>Bank Adı</h3>
-      <p>BirBank</p>
-     </div>
-     <div class="card-box-center">
-      <h3>Kart Nömrəsi</h3>
-      <p>5554 1245 6987 4528</p>
-     </div>
-    </div>
-
-    <div class="card-box">
-     <div class="card-box-center">
-      <h3>Hesab Sahibi</h3>
-      <p>Asgarov Elvin</p>
-     </div>
-     <div class="card-box-center">
-      <button class="birbankbtn">Ödəmə</button>
-     </div>
-    </div>
-   </div>
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>1 Aylıq otaq</p>
+   <p>96.82 <span>Rubl</span></p>
+   <p>1.07 <span>Usd</span></p>
+   <p>1.83 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
   </div>
 
-  <div class="hidden-acount hidden-acount1">
-   <div class="hidden-acount-left">
-    <h2>Qəbzi Seçin</h2>
-    <input class="fileinput" type="file" accept="image/*" multiple>
-    <button class="btn1">Təsdiqlə</button>
-    <p class="text1" style="font-size: 19px; font-weight: 800;"></p>
-   </div>
-   <div class="hidden-acount-right">
-    <h2>Kart bilgilerinizi daxil edin</h2>
-    <div class="acount-inputs">
-     <input class="cardnumber" type="text" maxlength="16" minlength="16" pattern="\d{16}"
-      title="Yalnız 16 rəqəmdən ibarət kart nömrəsi daxil edin." inputmode="numeric" required
-      placeholder="Kart Nömrəsi...">
-     <input type="text" class="expDate" maxlength="5" pattern="^(0[1-9]|1[0-2])\/\d{2}$" placeholder="MM/YY"
-      title="Ay 01-dən 12-yə, il isə iki rəqəm olmalıdır." required>
-     <input type="text" class="cvvInput" minlength="3" maxlength="3" title="3 rəqəmli olmalıdır" placeholder="CVV...">
-    </div>
-    <button class="btn2">Təsdiqlə</button>
-    <p class="text2" style="font-size: 19px; font-weight: 800;"></p>
-   </div>
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>1</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
   </div>
 
-  <div class="acount-container">
-   <h2>Bank Hesabı</h2>
-   <div class="acount-box">
-    <div class="acount-image">
-     <img src="../image/leobankfoto.jpg" alt="">
-    </div>
-    <div class="card-box">
-     <div class="card-box-center">
-      <h3>Bank Adı</h3>
-      <p>LeoBank</p>
-     </div>
-     <div class="card-box-center">
-      <h3>Kart Nömrəsi</h3>
-      <p>4442 7571 9750 1516</p>
-     </div>
-    </div>
-
-    <div class="card-box">
-     <div class="card-box-center">
-      <h3>Hesab Sahibi</h3>
-      <p>Asgarov Elvin</p>
-     </div>
-     <div class="card-box-center">
-      <button class="leobankbtn">Ödəmə</button>
-     </div>
-    </div>
-   </div>
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>3 Aylıq otaq</p>
+   <p>279.89 <span>Rubl</span></p>
+   <p>3.11 <span>Usd</span></p>
+   <p>5.29 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
   </div>
 
-  <div class="hidden-acount hidden-acount2">
-   <div class="hidden-acount-left">
-    <h2>Qəbzi Seçin</h2>
-    <input class="fileinput" type="file" accept="image/*" multiple>
-    <button class="btn1">Təsdiqlə</button>
-    <p class="text1" style="font-size: 19px; font-weight: 800;"></p>
-   </div>
-   <div class="hidden-acount-right">
-    <h2>Kart bilgilerinizi daxil edin</h2>
-    <div class="acount-inputs">
-     <input class="cardnumber" type="text" maxlength="16" minlength="16" pattern="\d{16}"
-      title="Yalnız 16 rəqəmdən ibarət kart nömrəsi daxil edin." inputmode="numeric" required
-      placeholder="Kart Nömrəsi...">
-     <input type="text" class="expDate" maxlength="5" pattern="^(0[1-9]|1[0-2])\/\d{2}$" placeholder="MM/YY"
-      title="Ay 01-dən 12-yə, il isə iki rəqəm olmalıdır." required>
-     <input type="text" class="cvvInput" minlength="3" maxlength="3" title="3 rəqəmli olmalıdır" placeholder="CVV...">
-    </div>
-    <button class="btn2">Təsdiqlə</button>
-    <p class="text2" style="font-size: 19px; font-weight: 800;"></p>
-   </div>
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>3</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
+  </div>
+
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>6 Aylıq otaq</p>
+   <p>422.75 <span>Rubl</span></p>
+   <p>4.77 <span>Usd</span></p>
+   <p>7.99 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
+  </div>
+
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>6</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
+  </div>
+
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>12 Aylıq otaq</p>
+   <p>883.06 <span>Rubl</span></p>
+   <p>9.81 <span>Usd</span></p>
+   <p>16.69 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
+  </div>
+
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>12</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
+  </div>
+
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>18 Aylıq otaq</p>
+   <p>2071.60 <span>Rubl</span></p>
+   <p>23.06 <span>Usd</span></p>
+   <p>39.21 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
+  </div>
+
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>18</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
+  </div>
+
+  <div class="pubg-container">
+   <img src="../image/netflixfoto.webp" alt="">
+   <p>24 Aylıq otaq</p>
+   <p>4166.13 <span>Rubl</span></p>
+   <p>46.31 <span>Usd</span></p>
+   <p>78.74 <span>Azn</span></p>
+   <input type="number" value="1" min="1" max="10">
+   <select name="" id="">
+    <option value="Rubl">Rubl</option>
+    <option value="Usd">Usd</option>
+    <option value="Azn">Azn</option>
+   </select>
+   <button>Satin Al</button>
+  </div>
+
+  <div class="hidden-pubg-box">
+   <table>
+    <tr>
+     <th>Ad</th>
+     <th>Ay</th>
+     <th>Valyuta</th>
+     <th>Məbləğ</th>
+     <th>Say</th>
+     <th>Yekun Məbləğ</th>
+    </tr>
+    <tr>
+     <td>Netflix</td>
+     <td>24</td>
+     <td class="valyuta"></td>
+     <td class="price"></td>
+     <td class="say"></td>
+     <td class="amount"></td>
+    </tr>
+   </table>
   </div>
 
   <div class="news-container">
-   <div class="games-box" id="news">
+   <div class="games-box help-games-box" id="news">
     <i class="ri-newspaper-fill"></i>
     <p>Xəbərlər</p>
    </div>
@@ -266,7 +380,8 @@
     <p>Game Store olaraq güvənli, sürətli və asan ödəniş üsulları ilə müştərilərimizə E-pin almaq, oyun içi ödəniş
      kimi
      bir çox xidmətləri göstəririk. Təcrübəli dəstək komandamız sayəsində yüksək keyfiyyətdə xidmət göstərib,
-     sifarişlərini maksimum tez biz zamanda tamamlayırıq. Məqsədimiz sərfəli qiymət, yüksək keyfiyyət göstərməkdir.
+     sifarişlərini maksimum tez biz zamanda tamamlayırıq. Məqsədimiz sərfəli qiymət, yüksək keyfiyyət
+     göstərməkdir.
     </p>
    </div>
 
@@ -308,7 +423,7 @@
   </div>
  </footer>
 
- <script src="../js/acount.js"></script>
+ <script src="../js/pubg.js"></script>
 </body>
 
 </html>

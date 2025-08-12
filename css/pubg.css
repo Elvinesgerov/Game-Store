@@ -1,0 +1,106 @@
+.pubg-container {
+ display: flex;
+ background-color: #f5f5f5;
+ margin-left: 200px;
+ width: 83%;
+ border-radius: 15px;
+ color: black;
+ gap: 35px;
+ align-items: center;
+ margin-top: 30px;
+ padding: 15px;
+ border: 3px solid orange;
+}
+
+.pubg-container img {
+ height: 150px;
+ border-radius: 15px;
+ width: 140px;
+}
+
+.pubg-container p {
+ font-size: 20px;
+ font-weight: 700;
+}
+
+.pubg-container span {
+ color: orange;
+ font-weight: 900;
+ font-style: italic;
+ font-size: 25px;
+}
+
+.pubg-container input {
+ height: 35px;
+ width: 65px;
+ border-radius: 7px;
+ border: 3px solid orange;
+ outline: none;
+ color: black;
+ font-size: 20px;
+ padding: 10px;
+}
+
+.pubg-container select {
+ height: 40px;
+ width: 80px;
+ border-radius: 10px;
+ border: 3px solid orange;
+ font-size: 18px;
+ outline: none;
+ padding: 5px;
+}
+
+.pubg-container button {
+ width: 90px;
+ height: 40px;
+ color: white;
+ background-color: orange;
+ border: none;
+ border-radius: 15px;
+ font-size: 16px;
+}
+
+.pubg-box {
+ margin-left: 200px;
+ margin-top: 30px;
+ width: 83%;
+}
+
+.hidden-pubg-box {
+ margin-left: 200px;
+ display: none;
+ flex-direction: column;
+ gap: 10px;
+ width: 83%;
+ background-color: #f5f5f5;
+ color: black;
+ border: 3px solid orange;
+ border-radius: 10px;
+ padding: 15px;
+ margin-top: 25px;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+}
+
+table tr th {
+ font-weight: 700;
+ color: orange;
+ padding: 8px;
+ text-align: center;
+}
+
+table tr td {
+ font-weight: 700;
+ padding: 8px;
+ text-align: center;
+}
+
+.darkmode-body .pubg-container,
+.darkmode-body .hidden-pubg-box {
+ background-color: #313131;
+ color: white;
+}
