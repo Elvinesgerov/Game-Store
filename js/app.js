@@ -4,7 +4,7 @@ const progressContent = document.querySelector(".autoplay-progress span");
 const darkmood = document.querySelector(".darkmood");
 const body = document.querySelector("body");
 const catagoryBox = document.querySelector(".catagory-box");
-const hiddenSections = document.querySelector(".hidden-sections");
+const flexhidden = document.querySelector(".flex-hidden");
 const hiddenSearch = document.querySelector(".hidden-search");
 const mainContainer = document.querySelector(".main-container")
 const searchInput = document.querySelector(".input-container input");
@@ -92,10 +92,10 @@ darkmood.addEventListener("click", darkmode);
 // Catagorya Js
 function catagoryFunc() {
  if (flag) {
-  hiddenSections.style.display = "flex"
+  flexhidden.style.display = "block"
   flag = !flag
  } else {
-  hiddenSections.style.display = "none"
+  flexhidden.style.display = "none"
   flag = !flag
  }
 }
@@ -103,18 +103,18 @@ catagoryBox.addEventListener("click", catagoryFunc)
 // Catagorya Js
 
 // Email Js
-function emailfunc() {
- const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
- const emailVal = footerRightInput.value.trim();
- if (fullEmailRegex.test(emailVal)) {
-  hiddenText.innerHTML = "Abune olundu ✅"
-  hiddenText.style.color = "green";
- } else {
-  hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
-  hiddenText.style.color = "red";
- }
-}
-footerRightButton.addEventListener("click", emailfunc);
+// function emailfunc() {
+//  const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
+//  const emailVal = footerRightInput.value.trim();
+//  if (fullEmailRegex.test(emailVal)) {
+//   hiddenText.innerHTML = "Abune olundu ✅"
+//   hiddenText.style.color = "green";
+//  } else {
+//   hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
+//   hiddenText.style.color = "red";
+//  }
+// }
+// footerRightButton.addEventListener("click", emailfunc);
 
-document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
+// document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
 // Email Js

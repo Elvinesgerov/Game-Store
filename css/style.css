@@ -350,7 +350,7 @@ main {
 .games-container {
  width: 100%;
  background-color: #EAEAEA;
- height: 500px;
+ height: auto;
  margin-top: 50px;
  padding-top: 30px;
  padding-left: 200px;
@@ -413,7 +413,7 @@ main {
 
 .service-box {
  background-color: #eaeaea;
- width: 300px;
+ width: 285px;
  height: 200px;
  display: flex;
  flex-direction: column;
@@ -592,13 +592,17 @@ main {
  background-color: #313131;
 }
 
+.flex-hidden {
+ display: none;
+}
+
 .hidden-sections {
  width: 250px;
  height: 150px;
  overflow-y: auto;
  background-color: white;
  border: 3px solid orange;
- display: none;
+ display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: flex-start;
@@ -641,4 +645,8 @@ main {
  margin-top: 5px;
  margin-left: 5px;
  padding: 10px;
+}
+
+.flex-hidden {
+ width: 100%;
 }
