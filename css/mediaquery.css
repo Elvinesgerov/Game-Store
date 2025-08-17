@@ -159,6 +159,7 @@
 
  .games-box {
   width: 100%;
+  margin-left: 0;
  }
 
  .games {
@@ -223,8 +224,13 @@
   font-size: 28px;
  }
 
+ .service-box h3 {
+  overflow-y: hidden;
+ }
+
  .service-box p {
   font-size: 14px;
+  overflow-y: hidden;
  }
 
  .footer-container {
@@ -304,9 +310,119 @@
   width: 35px;
   height: 35px;
  }
+
+ .acount-games-box {
+  margin-left: 0 !important;
+  width: 100% !important;
+ }
+
+ .acount-container {
+  margin-left: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 15px;
+ }
+
+ .acount-box {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .hidden-acount {
+  margin-left: 0 !important;
+  width: 100% !important;
+  flex-direction: column;
+  height: auto !important;
+  padding: 10px;
+ }
+
+ .hidden-acount-left input {
+  width: 320px;
+  font-size: 18px !important;
+ }
+
+ .hidden-acount-right h2,
+ .hidden-acount-left h2 {
+  font-size: 20px !important;
+ }
+
+ .text1 {
+  margin-bottom: 10px;
+ }
+
+ .text2 {
+  width: 100% !important;
+ }
+
+ .acount-inputs {
+  flex-direction: column;
+ }
+
+ .hidden-acount-left,
+ .hidden-acount-right {
+  align-items: center;
+ }
+
+ .pubg-container {
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 15px;
+  padding: 10px;
+ }
+
+ .pubg-container img {
+  width: 120px;
+  height: auto;
+ }
+
+ .pubg-container p {
+  font-size: 16px;
+  text-align: center;
+ }
+
+ .pubg-container span {
+  font-size: 18px;
+ }
+
+ .pubg-container input,
+ .pubg-container select,
+ .pubg-container button {
+  width: 80%;
+  max-width: 250px;
+  font-size: 16px;
+ }
+
+ .pubg-container button {
+  height: 38px;
+  font-size: 15px;
+ }
+
+ .hidden-pubg-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+ }
+
+ table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+ }
+
+ table tr th {
+  font-size: 12px;
+ }
+
+ table tr td {
+  font-size: 12px;
+ }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
+
  ::-webkit-scrollbar-thumb {
   background: black;
  }
@@ -454,6 +570,7 @@
 
  .games-box {
   width: 100%;
+  margin-left: 0;
  }
 
  .games {
@@ -587,6 +704,119 @@
   width: 38px;
   height: 38px;
  }
+
+ .acount-games-box {
+  margin-left: 0 !important;
+  width: 100% !important;
+ }
+
+ .acount-container {
+  margin-left: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 15px;
+ }
+
+ .acount-box {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .hidden-acount {
+  margin-left: 0 !important;
+  width: 100% !important;
+  flex-direction: column;
+  height: auto !important;
+  padding: 10px;
+  align-items: center;
+ }
+
+ .hidden-acount-left,
+ .hidden-acount-right {
+  align-items: center;
+ }
+
+ .hidden-acount-left input {
+  width: 400px;
+  font-size: 18px !important;
+ }
+
+ .hidden-acount-right h2,
+ .hidden-acount-left h2 {
+  font-size: 20px !important;
+ }
+
+ .text1 {
+  margin-bottom: 10px;
+ }
+
+ .text2 {
+  width: 100% !important;
+ }
+
+ .acount-inputs {
+  flex-direction: column;
+ }
+
+ .pubg-container {
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  padding: 12px;
+ }
+
+ .pubg-container img {
+  width: 130px;
+  height: auto;
+ }
+
+ .pubg-container p {
+  font-size: 18px;
+  text-align: center;
+  flex: 1 1 100%;
+ }
+
+ .pubg-container span {
+  font-size: 20px;
+ }
+
+ .pubg-container input,
+ .pubg-container select,
+ .pubg-container button {
+  width: 45%;
+  max-width: 200px;
+  font-size: 15px;
+ }
+
+ .pubg-container button {
+  height: 38px;
+  font-size: 15px;
+ }
+
+ .hidden-pubg-box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+ }
+
+ table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+ }
+
+ table tr th {
+  font-size: 14px;
+  padding: 6px;
+ }
+
+ table tr td {
+  font-size: 14px;
+  padding: 6px;
+ }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -696,6 +926,59 @@
   width: 90%;
   margin: auto;
  }
+
+ .hidden-acount {
+  flex-direction: column;
+  height: auto !important;
+  padding: 20px;
+ }
+
+ .text1 {
+  margin-bottom: 10px;
+ }
+
+ .acount-games-box,
+ .news-container .games-box {
+  margin-left: auto !important;
+  width: 95% !important;
+ }
+
+ .acount-container {
+  margin-left: 70px !important;
+ }
+
+ .acount-gamesBox {
+  margin-left: auto !important;
+ }
+
+ .hidden-acount {
+  margin-left: 70px !important;
+ }
+
+ .pubg-box {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 95%;
+ }
+
+ .pubg-container {
+  margin-left: 15px;
+  width: 95%;
+  gap: 15px;
+ }
+
+ .pubg-container p {
+  font-size: 17px;
+ }
+
+ .pubg-container p span {
+  font-size: 20px;
+ }
+
+ .hidden-pubg-box {
+  margin-left: 15px;
+  width: 95%;
+ }
 }
 
 @media (min-width: 901px) and (max-width: 1000px) {
@@ -734,7 +1017,7 @@
   margin: 15px 0;
  }
 
- .footer-right{
+ .footer-right {
   margin-top: 50px;
   margin-left: 55px;
  }
@@ -799,7 +1082,7 @@
  }
 }
 
-@media (min-width: 1000px) and (max-width: 1202px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
  .catagory-box {
   margin-left: 4%;
   font-size: 16px;
@@ -818,8 +1101,36 @@
   gap: 35px;
  }
 
- .footer-sections h2{
+ .footer-sections h2 {
   margin-left: -20px;
+ }
+
+ .acount-container {
+  margin-left: 85px !important;
+ }
+
+ .hidden-acount {
+  margin-left: 85px !important;
+ }
+
+ .flex-hidden {
+  margin-top: -7px;
+  padding-left: 20px;
+ }
+
+ .pubg-box {
+  width: 95%;
+  margin-left: 40px;
+ }
+
+ .pubg-container {
+  margin-left: 40px;
+  width: 95%;
+ }
+
+ .hidden-pubg-box {
+  margin-left: 40px;
+  width: 95%;
  }
 }
 
@@ -874,11 +1185,53 @@
   margin-left: 10%;
  }
 
- .news-container {
-  padding-left: 120px;
+ .news-container .games-box {
+  width: 100% !important;
+  margin-left: -75px !important;
  }
 
  .service-box {
-  width: 250px;
+  width: 240px;
+ }
+
+ .acount-games-box {
+  margin-left: auto !important;
+  width: 90% !important;
+ }
+
+ .acount-container {
+  margin-left: 10% !important;
+  width: 90% !important;
+ }
+
+ .service-box{
+  width: 235px;
+ }
+
+ .news-box{
+  margin-left: -75px;
+ }
+
+ .flex-hidden {
+  margin-left: -20px;
+ }
+
+ .pubg-container {
+  margin-left: 10%;
+  width: 90%;
+ }
+
+ .hidden-pubg-box {
+  margin-left: 10%;
+  width: 90%;
+ }
+
+ .pubg-box {
+  margin-left: 10%;
+  width: 90%;
+ }
+
+ .input-container input {
+  width: 100%;
  }
 }

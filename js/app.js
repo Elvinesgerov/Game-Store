@@ -59,7 +59,7 @@ let swiper = new Swiper(".mySwiper", {
   prevEl: ".swiper-button-prev"
  },
  on: {
-  autoplayTimeLeft(s, time, progress) {
+  autoplayTimeLeft: function (s, time, progress) {
    const offset = 125.6 * (1 - progress);
    progressCircle.style.strokeDashoffset = offset;
    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
@@ -103,18 +103,18 @@ catagoryBox.addEventListener("click", catagoryFunc)
 // Catagorya Js
 
 // Email Js
-// function emailfunc() {
-//  const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
-//  const emailVal = footerRightInput.value.trim();
-//  if (fullEmailRegex.test(emailVal)) {
-//   hiddenText.innerHTML = "Abune olundu ✅"
-//   hiddenText.style.color = "green";
-//  } else {
-//   hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
-//   hiddenText.style.color = "red";
-//  }
-// }
-// footerRightButton.addEventListener("click", emailfunc);
+function emailfunc() {
+ const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
+ const emailVal = footerRightInput.value.trim();
+ if (fullEmailRegex.test(emailVal)) {
+  hiddenText.innerHTML = "Abune olundu ✅"
+  hiddenText.style.color = "green";
+ } else {
+  hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
+  hiddenText.style.color = "red";
+ }
+}
+footerRightButton.addEventListener("click", emailfunc);
 
-// document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
+document.querySelector("#player-store").addEventListener("click", () => { alert("Tezlikle") })
 // Email Js

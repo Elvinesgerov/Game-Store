@@ -11,7 +11,7 @@ const listItems = document.querySelectorAll(".hidden-search ul li");
 const noResult = document.querySelector(".no-result");
 const darkmood = document.querySelector(".darkmood");
 const body = document.querySelector("body");
-const hiddenSections = document.querySelector(".hidden-sections");
+const flexhidden = document.querySelector(".flex-hidden");
 const catagoryBox = document.querySelector(".catagory-box");
 const footerRightButton = document.querySelector(".footer-right button");
 const footerRightInput = document.querySelector(".footer-right input");
@@ -22,10 +22,10 @@ let flag = true;
 // Catagorya Js
 function catagoryFunc() {
  if (flag) {
-  hiddenSections.style.display = "flex"
+  flexhidden.style.display = "flex"
   flag = !flag
  } else {
-  hiddenSections.style.display = "none"
+  flexhidden.style.display = "none"
   flag = !flag
  }
 }
