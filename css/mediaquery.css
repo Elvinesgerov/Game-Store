@@ -419,6 +419,200 @@
  table tr td {
   font-size: 12px;
  }
+
+ .question {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: auto;
+  max-height: none;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid orange;
+ }
+
+ .questionboxs {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 15px;
+  border-radius: 8px;
+ }
+
+ .problems {
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .questiontext {
+  font-size: 16px;
+  margin-left: 0;
+  margin-top: 5px;
+ }
+
+ .problems:hover {
+  padding-left: 20px;
+ }
+
+ .answer {
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+ }
+
+ h2 {
+  font-size: 20px;
+  margin-top: 15px;
+ }
+
+ .logincontainer {
+  margin-top: 40px;
+  width: 100%;
+ }
+
+ .logincontainer input {
+  border: 2px solid orange !important;
+  border-radius: 7px;
+  width: 155px;
+ }
+
+ .submitbutton {
+  height: 35px;
+  font-size: 16px !important;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-y: hidden;
+  border-radius: 7px;
+ }
+
+ .ghost,
+ .qeydiyatbox {
+  height: 45px;
+  font-size: 14.5px !important;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-y: hidden;
+  margin-top: 10px !important;
+  border-radius: 7px;
+  justify-content: flex-start;
+  padding-left: 3px !important;
+ }
+
+ .overlay-panel h1 {
+  font-size: 25px;
+  margin-top: -30px;
+ }
+
+ .overlay-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .services-container {
+  padding-left: 0;
+ }
+
+ .contact-container {
+  gap: 20px;
+  margin-top: 30px;
+ }
+
+ .contact-container h2 {
+  font-size: 22px;
+  text-align: center;
+ }
+
+ .contact-box1 {
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+ }
+
+ .contact-box1 input {
+  width: 100%;
+  padding-left: 10px;
+  height: 45px;
+  font-size: 16px;
+ }
+
+ .contact-container textarea {
+  width: 100%;
+  height: 180px;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 16px;
+ }
+
+ .contact-container button {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+ }
+
+ .hiddentextcontact {
+  font-size: 16px;
+  text-align: center;
+ }
+
+ .backrules {
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: auto;
+  max-height: none;
+  padding-top: 8px;
+  margin-top: 12px;
+ }
+
+ .rule-box {
+  margin: 12px auto 0 auto;
+  width: 92%;
+ }
+
+ .rules {
+  margin: 12px auto;
+  width: 92%;
+  padding: 14px;
+  border-radius: 10px;
+  border-width: 3px;
+  height: auto;
+  color: black;
+  background: #fff;
+  overflow-wrap: anywhere;
+ }
+
+ .rules h2 {
+  margin-left: 0 !important;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+ }
+
+ .rules span {
+  color: orange;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+ }
+
+ .rules ul {
+  padding-left: 18px;
+  margin: 0;
+ }
+
+ .rules ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 12px;
+ }
+
+ .rules h2 {
+  overflow-y: hidden;
+  text-align: center;
+ }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -817,6 +1011,157 @@
   font-size: 14px;
   padding: 6px;
  }
+
+ .question {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: auto;
+  max-height: none;
+  margin-top: 30px;
+  border-radius: 9px;
+  border: 3px solid orange;
+ }
+
+ .questionboxs {
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 20px;
+  border-radius: 9px;
+ }
+
+ .problems {
+  padding: 18px;
+  flex-direction: row;
+  align-items: center;
+ }
+
+ .questiontext {
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 0;
+ }
+
+ .problems:hover {
+  padding-left: 30px;
+ }
+
+ .answer {
+  padding-left: 12px;
+  padding-top: 20px;
+  font-size: 15px;
+ }
+
+ h2 {
+  font-size: 22px;
+  margin-top: 20px;
+ }
+
+ .loginmain {
+  margin-top: 30px;
+ }
+
+ .contact-container {
+  gap: 25px;
+  margin-top: 40px;
+ }
+
+ .contact-container h2 {
+  font-size: 26px;
+  text-align: center;
+ }
+
+ .contact-box1 {
+  flex-direction: row;
+  gap: 25px;
+  width: 95%;
+ }
+
+ .contact-box1 input {
+  width: calc(50% - 12.5px);
+  height: 50px;
+  padding-left: 15px;
+  font-size: 17px;
+ }
+
+ .contact-container textarea {
+  width: 95%;
+  height: 200px;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-size: 17px;
+ }
+
+ .contact-container button {
+  width: 150px;
+  height: 55px;
+  font-size: 17px;
+ }
+
+ .hiddentextcontact {
+  font-size: 18px;
+  text-align: center;
+ }
+
+ .services-container {
+  padding-left: 0;
+ }
+
+ .backrules {
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: auto;
+  max-height: none;
+  padding-top: 10px;
+  margin-top: 20px;
+ }
+
+ .rule-box {
+  margin: 20px auto 0 auto;
+  width: 90%;
+ }
+
+ .rules {
+  margin: 20px auto;
+  width: 90%;
+  padding: 18px;
+  border-radius: 10px;
+  border-width: 4px;
+  height: auto;
+  color: black;
+  background: #fff;
+  overflow-wrap: anywhere;
+ }
+
+ .rules h2 {
+  margin-left: 0 !important;
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: left;
+ }
+
+ .rules span {
+  color: orange;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 17px;
+ }
+
+ .rules ul {
+  padding-left: 20px;
+  margin: 0;
+ }
+
+ .rules ul li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 14px;
+ }
+
+ .rules h2 {
+  overflow-y: hidden;
+  text-align: center;
+ }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -890,6 +1235,7 @@
 
  .games-box {
   width: 100%;
+  margin-top: 30px !important;
  }
 
  .games {
@@ -978,6 +1324,65 @@
  .hidden-pubg-box {
   margin-left: 15px;
   width: 95%;
+ }
+
+ .question {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: auto;
+  max-height: none;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 3px solid orange;
+ }
+
+ .questionboxs {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+ }
+
+ .problems {
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+ }
+
+ .questiontext {
+  font-size: 19px;
+  margin-left: 20px;
+  margin-top: 0;
+ }
+
+ .problems:hover {
+  padding-left: 35px;
+ }
+
+ .answer {
+  padding-left: 15px;
+  padding-top: 25px;
+  font-size: 16px;
+ }
+
+ h2 {
+  font-size: 24px;
+  margin-top: 25px;
+ }
+
+ .loginmain {
+  margin-top: 30px;
+ }
+
+ .services-container {
+  padding-left: 0;
+ }
+
+ .rules {
+  margin-left: 5%;
+  width: 90%;
  }
 }
 
@@ -1190,6 +1595,11 @@
   margin-left: -75px !important;
  }
 
+ .help-box1,
+ .question {
+  margin-left: 10%;
+ }
+
  .service-box {
   width: 240px;
  }
@@ -1204,11 +1614,11 @@
   width: 90% !important;
  }
 
- .service-box{
+ .service-box {
   width: 235px;
  }
 
- .news-box{
+ .news-box {
   margin-left: -75px;
  }
 
@@ -1233,5 +1643,36 @@
 
  .input-container input {
   width: 100%;
+ }
+
+ .login-box {
+  margin-left: 120px;
+ }
+
+ .loginmain {
+  margin-top: 30px;
+ }
+
+ .contact-box {
+  margin-left: 10%;
+ }
+
+ .services-container {
+  padding-left: 160px;
+ }
+
+ .services-container .service-box {
+  width: 270px;
+ }
+
+ .rule-box, .rules{
+  margin-left: 10%;
+  width: 85%;
+ }
+}
+
+@media (min-width: 1450px) {
+ .loginmain {
+  margin-top: 30px;
  }
 }

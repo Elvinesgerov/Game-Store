@@ -6,7 +6,7 @@ const emailinput = document.querySelector(".emailinput");
 const numberinput = document.querySelector(".numberinput");
 const textarea = document.querySelector("textarea");
 const hiddentextcontact = document.querySelector(".hiddentextcontact");
-const hiddenSections = document.querySelector(".hidden-sections");
+const flexhidden = document.querySelector(".flex-hidden");
 const catagoryBox = document.querySelector(".catagory-box");
 const body = document.querySelector("body");
 const darkmood = document.querySelector(".darkmood");
@@ -86,10 +86,10 @@ darkmood.addEventListener("click", darkmode);
 // Catagorya Js
 function catagoryFunc() {
  if (flag) {
-  hiddenSections.style.display = "flex"
+  flexhidden.style.display = "flex"
   flag = !flag
  } else {
-  hiddenSections.style.display = "none"
+  flexhidden.style.display = "none"
   flag = !flag
  }
 }

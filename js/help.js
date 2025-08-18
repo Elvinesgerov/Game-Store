@@ -4,7 +4,7 @@ const listItems = document.querySelectorAll(".hidden-search ul li");
 const noResult = document.querySelector(".no-result");
 const darkmood = document.querySelector(".darkmood");
 const body = document.querySelector("body");
-const hiddenSections = document.querySelector(".hidden-sections");
+const flexhidden = document.querySelector(".flex-hidden");
 const catagoryBox = document.querySelector(".catagory-box");
 const footerRightButton = document.querySelector(".footer-right button");
 const footerRightInput = document.querySelector(".footer-right input");
@@ -15,73 +15,73 @@ let flag = true;
 
 // Catagorya Js
 function catagoryFunc() {
- if (flag) {
-  hiddenSections.style.display = "flex"
-  flag = !flag
- } else {
-  hiddenSections.style.display = "none"
-  flag = !flag
- }
+  if (flag) {
+    flexhidden.style.display = "flex"
+    flag = !flag
+  } else {
+    flexhidden.style.display = "none"
+    flag = !flag
+  }
 }
 catagoryBox.addEventListener("click", catagoryFunc)
 // Catagorya Js
 
 // Dark Mood Js
 if (localStorage.getItem("darkMode") === "enabled") {
- body.classList.add("darkmode-body");
+  body.classList.add("darkmode-body");
 }
 
 function darkmode(e) {
- e.preventDefault();
- body.classList.toggle("darkmode-body");
- const isDark = body.classList.contains("darkmode-body");
+  e.preventDefault();
+  body.classList.toggle("darkmode-body");
+  const isDark = body.classList.contains("darkmode-body");
 
- if (isDark) {
-  localStorage.setItem("darkMode", "enabled");
- } else {
-  localStorage.setItem("darkMode", "disabled");
- }
+  if (isDark) {
+    localStorage.setItem("darkMode", "enabled");
+  } else {
+    localStorage.setItem("darkMode", "disabled");
+  }
 }
 darkmood.addEventListener("click", darkmode);
 // Dark Mood Js
 
 // search Js
 function searchfunc() {
- const inputValue = searchInput.value.toLowerCase().trim();
- let found = false;
+  const inputValue = searchInput.value.toLowerCase().trim();
+  let found = false;
 
- hiddenSearch.classList.add("show");
+  hiddenSearch.classList.add("show");
 
- listItems.forEach(li => {
-  const text = li.textContent.toLowerCase();
-  if (text.startsWith(inputValue) && inputValue !== "") {
-   li.style.display = "list-item";
-   found = true;
-  } else {
-   li.style.display = "none";
+  listItems.forEach(li => {
+    const text = li.textContent.toLowerCase();
+    if (text.startsWith(inputValue) && inputValue !== "") {
+      li.style.display = "list-item";
+      found = true;
+    } else {
+      li.style.display = "none";
+    }
+  });
+
+  noResult.style.display = (!found && inputValue !== "") ? "block" : "none";
+
+  if (inputValue === "") {
+    hiddenSearch.classList.remove("show");
   }
- });
-
- noResult.style.display = (!found && inputValue !== "") ? "block" : "none";
-
- if (inputValue === "") {
-  hiddenSearch.classList.remove("show");
- }
 }
 searchInput.addEventListener("input", searchfunc)
 // search Js
 
 // Email Js
 function emailfunc() {
- const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
- const emailVal = footerRightInput.value.trim();
- if (fullEmailRegex.test(emailVal)) {
-  hiddenText.innerHTML = "Abune olundu ✅"
-  hiddenText.style.color = "green";
- } else {
-  hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
-  hiddenText.style.color = "red";
- }
+  const fullEmailRegex = /^[A-Za-z0-9.]{6,30}@gmail\.com$/i;
+  const emailVal = footerRightInput.value.trim();
+  if (fullEmailRegex.test(emailVal)) {
+    hiddenText.innerHTML = "Abune olundu ✅"
+    hiddenText.style.color = "green";
+  } else {
+    hiddenText.innerHTML = "Yalnız hərflər (A-Z, a-z), rəqəmlər və nöqtə istifadə oluna bilər. Sonu @gmail.com olmalıdır. ❌"
+    hiddenText.style.color = "red";
+  }
 }
 footerRightButton.addEventListener("click", emailfunc);
 
@@ -90,23 +90,24 @@ document.querySelector("#player-store").addEventListener("click", () => { alert(
 
 // questions Js
 function toggleAnswers() {
- const questions = document.querySelectorAll(".problems");
-
- questions.forEach(question => {
-  question.addEventListener("click", () => {
-   closeAllAnswers();
-
-   const answerDiv = question.nextElementSibling;
-   if (answerDiv && answerDiv.classList.contains("answer")) {
-     answerDiv.style.display = "block";
-   }
+  const questions = document.querySelectorAll(".problems");
+  questions.forEach(question => {
+    question.addEventListener("click", () => {
+      const answerDiv = question.nextElementSibling;
+      if (answerDiv && answerDiv.classList.contains("answer")) {
+        const isVisible = answerDiv.style.display === "block";
+        closeAllAnswers();
+        if (!isVisible) {
+          answerDiv.style.display = "block";
+        }
+      }
+    });
   });
- });
 }
 
 function closeAllAnswers() {
- const allAnswers = document.querySelectorAll(".answer");
- allAnswers.forEach(ans => ans.style.display = "none");
+  const allAnswers = document.querySelectorAll(".answer");
+  allAnswers.forEach(ans => ans.style.display = "none");
 }
 toggleAnswers();
 // questions Js

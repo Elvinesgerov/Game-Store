@@ -1,5 +1,5 @@
 // Variables
-const hiddenSections = document.querySelector(".hidden-sections");
+const flexhidden = document.querySelector(".flex-hidden");
 const catagoryBox = document.querySelector(".catagory-box");
 const darkmood = document.querySelector(".darkmood");
 const body = document.querySelector("body");
@@ -78,10 +78,10 @@ darkmood.addEventListener("click", darkmode);
 // Catagorya Js
 function catagoryFunc() {
  if (flag) {
-  hiddenSections.style.display = "flex"
+  flexhidden.style.display = "flex"
   flag = !flag
  } else {
-  hiddenSections.style.display = "none"
+  flexhidden.style.display = "none"
   flag = !flag
  }
 }
